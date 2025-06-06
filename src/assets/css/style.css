@@ -1,0 +1,148 @@
+/* Global Styles & Shared Header/Footer */
+:root {
+    --primary-color: #2E7D32; /* Dark Green */
+    --secondary-color: #66BB6A; /* Light Green */
+    --accent-color: #FFC107; /* Amber/Gold */
+    --text-color: #333;
+    --bg-color: #F8F9FA;
+    --light-bg: #FFFFFF;
+    --border-color: #DEE2E6;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Shared Header */
+.site-header {
+    background-color: var(--light-bg);
+    padding: 15px 5%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.site-header nav a {
+    margin-left: 20px;
+    font-size: 1.1em;
+    position: relative; /* For cart count positioning */
+}
+
+.site-header .cart-icon-link {
+    display: flex;
+    align-items: center;
+}
+
+.site-header .cart-icon-img {
+    width: 28px; /* Adjust size as needed */
+    height: 28px;
+    vertical-align: middle;
+}
+
+.site-header .cart-item-count {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 0.8em;
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    min-width: 10px;
+    text-align: center;
+}
+
+
+/* Shared Footer */
+.site-footer, .landing-footer {
+    background-color: var(--primary-color);
+    color: var(--light-bg);
+    text-align: center;
+    padding: 20px 5%;
+    margin-top: 30px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+    color: white;
+}
+
+/* Basic utility for centering content if needed */
+.text-center {
+    text-align: center;
+}

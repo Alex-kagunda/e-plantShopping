@@ -1,0 +1,45 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('../images/background.jpeg') no-repeat center center/cover; /* Ensure image path is correct */
+    color: white; /* Text color on top of background */
+}
+
+.landing-header {
+    padding: 20px 5%;
+    background-color: rgba(0, 0, 0, 0.3); /* Slight overlay for header text visibility */
+    text-align: center;
+}
+
+.landing-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white; /* Override global h1 color */
+}
+
+.landing-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text block */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.landing-footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Match footer style to page */
+}
